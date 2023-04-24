@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUDS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="all.min.css">
+        <link rel="stylesheet" href="CRUD.css">
+    </head>
+    <body>
+        <div class="curd">
+            <header>
+                <h2>crud</h2>
+                <p>product management system</p>
+            </header>
+            <div class="inputs">
+                <input type="text" placeholder="tittle" id="tittle">
+                <div class="price">
+                    <input type="number" onkeyup="total()" placeholder="price" id="price">
+                    <input type="number" onkeyup="total()" placeholder="taxes" id="taxes">
+                    <input type="number" onkeyup="total()" placeholder="ads" id="ads">
+                    <input type="number" onkeyup="total()" placeholder="discount" id="discount">
+                    <span id="totalSalary"></span>
+                </div>
+                <input type="number" placeholder="count" id="count">
+                <input type="text" placeholder="category" id="category">
+                <button id="create">Create</button>
+            </div>
+            <div class="outputs">
+                <input type="search" placeholder="Search" id="search">
+                <div class="btns">
+                    <button id="search-tittle">Search By Tittle</button>
+                    <button id="search-category">Search By Category</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>tittle</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="CRUD.js"></script>
+    </body>
+</html>
