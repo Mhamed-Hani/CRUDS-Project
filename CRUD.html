@@ -16,7 +16,7 @@
                 <p>product management system</p>
             </header>
             <div class="inputs">
-                <input type="text" placeholder="tittle" id="tittle">
+                <input type="text" placeholder="title" id="title">
                 <div class="price">
                     <input type="number" onkeyup="total()" placeholder="price" id="price">
                     <input type="number" onkeyup="total()" placeholder="taxes" id="taxes">
@@ -26,13 +26,16 @@
                 </div>
                 <input type="number" placeholder="count" id="count">
                 <input type="text" placeholder="category" id="category">
-                <button>Create</button>
+                <button id="create">Create</button>
             </div>
             <div class="outputs">
-                <input type="search" placeholder="Search" id="search">
+                <input type="search" onkeyup="searchItem(this.value)" placeholder="Search" id="search">
                 <div class="btns">
-                    <button id="search-tittle">Search By Tittle</button>
-                    <button id="search-category">Search By Category</button>
+                    <button onclick="getSearchTitle(this.id)" id="search-title">Search By Tittle</button>
+                    <button onclick="getSearchTitle(this.id)" id="search-category">Search By Category</button>
+                </div>
+                <div id="deleteAll">
+
                 </div>
                 <table>
                     <tr>
@@ -47,8 +50,8 @@
                         <th>update</th>
                         <th>delete</th>
                     </tr>
-                    <tbody>
-                        
+                    <tbody id="tbody">
+
                     </tbody>
                 </table>
             </div>

@@ -112,8 +112,19 @@ table tr th {
 }
 table tr td button {
     width: fit-content;
-    padding: 10px 15px;
 }
 th, td {
-    padding: 5px;
+    padding: 15px;
+}
+table tbody .btn {
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;    
+    padding: 10px 20px;
+    background-color: rgb(82, 4, 103);
+}
+#deleteAll {
+    margin: 10px 0;
 }
